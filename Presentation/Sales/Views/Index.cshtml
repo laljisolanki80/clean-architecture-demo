@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CleanArchitecture.Application.Sales.Queries.GetSalesList.SalesListItemModel>
+﻿@model System.Collections.Generic.IEnumerable<CleanArchitecture.Application.Sales.Queries.GetSalesList.SalesListItemModel>
 
 @{
     ViewBag.Title = "Sales";
@@ -22,7 +22,7 @@
         @foreach (var sale in Model)
         {
             <tr>
-                <td><a href="sales/@sale.Id">@sale.Id</a></td>
+                <td><a href="../@sale.Id">@sale.Id</a></td>
                 <td>@sale.Date.ToString("d")</td>
                 <td>@sale.CustomerName</td>
                 <td>@sale.EmployeeName</td>
